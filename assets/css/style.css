@@ -6,6 +6,10 @@
   font-family: "Lato", sans-serif;
 }
 
+body {
+  background-color: rgba(159, 159, 159, 0.1803921569);
+}
+
 a {
   text-decoration: none;
 }
@@ -336,6 +340,235 @@ i {
 @media (max-width: 353px) {
   .showcase {
     height: 210vh;
+  }
+}
+.flashcards {
+  margin-top: 80px;
+}
+.flashcards .sec-p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #4b5157;
+}
+
+.flashcards > div {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "num1 num1 num2" "num3 num4 num5" "num3 num6 num7";
+}
+
+.num1 {
+  grid-area: num1;
+}
+
+.num2 {
+  grid-area: num2;
+}
+
+.num3 {
+  grid-area: num3;
+}
+
+.num4 {
+  grid-area: num4;
+}
+
+.num5 {
+  grid-area: num5;
+}
+
+.num6 {
+  grid-area: num6;
+}
+
+.num7 {
+  grid-area: num7;
+}
+
+.flashcard h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5625;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.num1 {
+  width: 555px;
+  padding: 15px;
+  background-color: #fff;
+}
+.num1 .num1-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.num1 .num1-top .num1-writing {
+  width: 50%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: column;
+}
+.num1 .num1-top .car {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6e99ae;
+}
+.num1 .num1-top h1 {
+  font-family: var("Roboto", sans-serif);
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #262d33;
+}
+.num1 .acount {
+  border-top: 2px solid #939699;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.num1 .acount p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #4b5157;
+}
+.num1 .comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.num2 {
+  background: url(../../img/flashcard\ 2.png);
+  background-size: cover;
+  width: 263px;
+  height: 370px;
+  padding: 20px;
+  border-radius: 8px 0 0 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: column;
+}
+.num2 .account2 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  flex-direction: row;
+}
+.num2 .account2 .icons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  flex-direction: row;
+}
+.num2 .account2 span {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.num2 .first {
+  position: relative;
+  top: 10px;
+  left: -80px;
+  background-color: rgb(114, 230, 137);
+  padding: 10px;
+}
+.num2 .art {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e7d9ff;
+}
+
+.icons p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  opacity: 0.4;
+}
+
+.num3 {
+  background: url(../../img/num3\ img.png);
+  background-size: cover;
+  background-position: center;
+  width: 263px;
+  height: 370px;
+}
+.num3 h3 {
+  line-height: 1.5625;
+  text-transform: lowercase;
+}
+.num3 div {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: 263px;
+  height: 170px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+}
+.card h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5625;
+  color: #262d33;
+}
+.card p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #4b5157;
+}
+.card span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #939699;
+}
+
+@media (max-width: 895px) {
+  .flashcards > div {
+    grid-template-areas: "num1 num1" "num2 num3" "num2 num3" "num4 num5" "num6 num7";
+  }
+}
+@media (max-width: 580px) {
+  .flashcards > div {
+    grid-template-areas: "num1" "num2" "num3" "num4" "num5" "num6" "num7";
+  }
+  .num1 {
+    width: 260px;
+  }
+  .num1-top {
+    flex-wrap: wrap;
   }
 }
 

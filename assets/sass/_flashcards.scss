@@ -1,0 +1,216 @@
+@use "./mixin" as *;
+@use "./variable" as *;
+
+.flashcards {
+  margin-top: 80px;
+  .sec-p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #4b5157;
+  }
+}
+.flashcards > div{
+    display: grid;
+ gap: 20px;
+    grid-template-areas: 
+    "num1 num1 num2"
+    "num3 num4 num5"
+    "num3 num6 num7";
+}
+.num1{
+    grid-area: num1;
+}
+.num2{
+    grid-area: num2;
+
+}
+.num3{
+    grid-area: num3;
+}
+.num4{
+grid-area: num4;
+}
+.num5{
+grid-area: num5;
+}
+.num6{
+grid-area: num6;
+}
+.num7{
+grid-area: num7;
+}
+.flashcard {
+  h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5625;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+.num1 {
+  width: 555px;
+  padding: 15px;
+  background-color: $color-white;
+
+  .num1-top {
+    @include flex(center, center, 10px);
+    margin-bottom: 20px;
+    .num1-writing {
+      width: 50%;
+      @include flex(start, space-between, 10px);
+      flex-direction: column;
+    }
+    .car {
+      font-weight: 900;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #6e99ae;
+    }
+    h1 {
+      font-family: var($font-roboto);
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 1.2;
+      color: #262d33;
+    }
+  }
+  .acount {
+    border-top: 2px solid #939699;
+    padding: 10px;
+    @include flex(center, center, 10px);
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.42857;
+      color: #4b5157;
+    }
+  }
+  .comment {
+    @include flex(center, center, 5px);
+  }
+}
+
+.num2 {
+  background: url(../../img/flashcard\ 2.png);
+  background-size: cover;
+  width: 263px;
+  height: 370px;
+  padding: 20px;
+  border-radius: 8px 0 0 8px;
+  color: white;
+  @include flex(center, space-between, 10px);
+  flex-direction: column;
+  .account2 {
+    @include flex(center, start, 10px);
+    flex-direction: row;
+    .icons {
+      @include flex(center, start, 10px);
+      flex-direction: row;
+    }
+    span {
+      @include flex(center, start, 10px);
+    }
+  }
+  .first {
+    position: relative;
+    top: 10px;
+    left: -80px;
+    background-color: rgb(114, 230, 137);
+    padding: 10px;
+  }
+  .art {
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #e7d9ff;
+  }
+}
+.icons {
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    opacity: 0.4;
+  }
+}
+.num3 {
+  background: url(../../img/num3\ img.png);
+  background-size: cover;
+  background-position: center;
+  width: 263px;
+  height: 370px;
+  h3 {
+    line-height: 1.5625;
+    text-transform: lowercase;
+  }
+  div {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.card {
+  h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5625;
+    color: #262d33;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #4b5157;
+  }
+  span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #939699;
+  }
+
+  background-color: white;
+  border-radius: 10px;
+  width: 263px;
+  height: 170px;
+  @include flex(start, center, 10px);
+  flex-direction: column;
+  padding: 10px;
+}
+@media(max-width:895px){
+     .flashcards > div{
+        grid-template-areas:
+        "num1 num1"
+        "num2 num3"
+        "num2 num3"
+        "num4 num5"
+        "num6 num7";
+}
+}
+@media(max-width:580px){
+.flashcards > div{
+ grid-template-areas:
+ "num1"
+ "num2"
+ "num3"
+ "num4"
+ "num5"
+ "num6"
+ "num7"
+;
+}
+.num1{
+width: 260px;
+}
+.num1-top{
+ flex-wrap: wrap;
+}
+
+}
