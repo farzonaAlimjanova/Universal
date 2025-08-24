@@ -1,0 +1,159 @@
+@use "./mixin" as *;
+@use "./variable" as *;
+.sectors > div{
+    margin-top: 80px
+}
+.box1{
+     @include flex(center, space-evenly, 10px);
+     padding: 20px;
+     .box1-writing{
+         @include flex(start, space-between, 10px);
+         flex-direction: column;
+         width: 50%;
+     }
+     .fav{
+        @include flex(center, space-between,350px ); 
+        p{
+font-weight: 900;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #4592ff;
+        }
+     }
+
+}
+.sec{
+    border-bottom: 1px solid #939699;  
+     width: 848px;
+height: 245px;
+background-color: white;
+h3{
+font-weight: 700;
+font-size: 20px;
+line-height: 1.25;
+color: #262d33;
+}
+p{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.42857;
+color: #4b5157;
+}
+.response{
+    @include flex(center, center,10px ); 
+font-weight: 400;
+font-size: 12px;
+line-height: 1.25;
+color: #939699;
+}
+.icon-img{
+    @include flex(center, center,5px ); 
+}
+}
+.box2{
+     @include flex(center, space-evenly, 10px);
+     padding: 20px;
+     .box2-writing{
+         @include flex(start, space-between, 10px);
+         flex-direction: column;
+         width: 50%;
+     }
+     .fav{
+        @include flex(center, space-between,350px ); 
+        p{
+font-weight: 900;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #3bbdc4;
+        }
+     }
+
+}
+.box3{
+     @include flex(center, space-evenly, 10px);
+     padding: 20px;
+     .box3-writing{
+         @include flex(start, space-between, 10px);
+         flex-direction: column;
+         width: 50%;
+     }
+     .fav{
+        @include flex(center, space-between,350px ); 
+        p{
+font-weight: 900;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #ff4f52;
+        }
+     }
+
+}
+.box4{
+     @include flex(center, space-evenly, 10px);
+     padding: 20px;
+     .box4-writing{
+         @include flex(start, space-between, 10px);
+         flex-direction: column;
+         width: 50%;
+     }
+     .fav{
+        @include flex(center, space-between,350px ); 
+        p{
+font-weight: 900;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #3bbdc4;
+        }
+     }
+
+}
+.box5{
+     @include flex(center, space-evenly, 10px);
+     padding: 20px;
+     .box5-writing{
+         @include flex(start, space-between, 10px);
+         flex-direction: column;
+         width: 50%;
+     }
+     .fav{
+        @include flex(center, space-between,350px ); 
+        p{
+font-weight: 900;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #ff4f52;
+        }
+     }
+
+}
+.box6{
+     @include flex(center, space-evenly, 10px);
+     padding: 20px;
+     .box6-writing{
+         @include flex(start, space-between, 10px);
+         flex-direction: column;
+         width: 50%;
+     }
+     .fav{
+        @include flex(center, space-between,350px ); 
+        p{
+font-weight: 900;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #ac8ee3;
+        }
+     }
+
+}
