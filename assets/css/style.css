@@ -198,7 +198,7 @@ i {
   margin-top: 60px;
 }
 .showcase_mountain {
-  background: url(../../img/mountain.png);
+  background: url(../../img/showcase\ img.png);
   background-size: cover;
   border-radius: 8px 0 0 8px;
 }
@@ -295,7 +295,9 @@ i {
 
 .showcase_recomended {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  min-width: 263px;
+  padding: 10px;
 }
 
 @media (max-width: 1000px) {
@@ -308,6 +310,32 @@ i {
   .showcase_recomended {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .showcase {
+    height: 150vh;
+  }
+  .showcase_recomended {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+}
+@media (max-width: 351px) {
+  .play_buttons {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 403px) {
+  .showcase {
+    height: 180vh;
+  }
+}
+@media (max-width: 353px) {
+  .showcase {
+    height: 210vh;
   }
 }
 
