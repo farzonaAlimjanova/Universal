@@ -1,0 +1,44 @@
+@use "./mixin" as *;
+@use "./variable" as *;
+.bloom{
+        background: url(../../img/bloom\ img.png);
+    background-size: cover;
+    color: white;
+height: 270px;
+width: 100%;
+margin-top: 80px;
+}
+.bloom > div{
+ @include flex(center,center, 20px);
+ flex-direction: column;
+ padding: 40px;
+h1{
+font-weight: 700;
+font-size: 40px;
+line-height: 1.25;
+text-align: center;
+}
+button{
+    width: 138px;
+height: 40px;
+border-radius: 25px;
+color: white;
+background-color: rgb(38, 149, 235);
+border: none;
+@include flex(center,center, 20px);
+}
+}
+@media(max-width:760px){
+    .bloom > div{
+        h1{
+            font-size: 30px;
+        }
+    }
+}
+@media(max-width:396px){
+    .bloom > div{
+        h1{
+            font-size: 20px;
+        }
+    }
+}
