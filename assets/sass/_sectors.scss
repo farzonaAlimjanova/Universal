@@ -1,7 +1,8 @@
 @use "./mixin" as *;
 @use "./variable" as *;
 .sectors > div{
-    margin-top: 80px
+    margin-top: 80px;
+     @include flex(center, space-evenly, 10px);
 }
 .box1{
      @include flex(center, space-evenly, 10px);
@@ -156,4 +157,119 @@ color: #ac8ee3;
         }
      }
 
+}
+.rec{
+        background-color: white;
+   
+    border-bottom: 1px solid #939699;
+    width: 300px;
+       padding: 10px; 
+       h2{
+font-weight: 900;
+font-size: 14px; 
+line-height: 1.42857;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #262d33;
+text-align: center;
+       }
+}
+.right{
+    background-color: white;
+    
+    border-bottom: 1px solid #939699;
+    width: 300px;
+    @include flex(center, space-evenly,10px );
+    padding: 20px; 
+    img{
+        width: 100%;
+        height: auto;
+    }
+    p{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.42857;
+color: #4b5157;
+    }
+    span{
+font-weight: 400;
+font-size: 12px;
+line-height: 1.25;
+color: #939699;
+    }
+}
+.num{
+font-style: italic;
+font-weight: 400;
+font-size: 70px;
+line-height: 0.71429;
+text-align: right;
+color: #262d33;
+opacity: 0.08;
+}
+.more{
+font-weight: 900;
+font-size: 14px;
+line-height: 1.42857;
+text-align: center;
+color: #262d33;
+   background-color: white;
+       width: 300px;
+       padding: 10px; 
+}
+
+
+@media(max-width:1220px){
+    .sector-left{
+     .sec{
+        flex-direction: column;
+        height: 100%;
+        width: 500px;
+        .box1-writing , .box2-writing , .box3-writing , .box4-writing, .box5-writing , .box6-writing{
+             @include flex(center, start,10px );
+        }
+     }
+    
+    }
+}
+@media(max-width:865px){
+    .sector-left{
+     .sec{
+
+        width: 300px;
+     }
+     .fav{
+        gap: 200px;
+     }
+}
+.sector-right{
+    .right{
+flex-direction: column;
+width: 200px;
+    }
+    .rec{
+        width: 200px;
+    }
+    .more{
+        width: 200px;
+    }
+}
+}
+@media(max-width:543px){
+.sectors > div{
+     @include flex(center, center, 10px);
+     flex-direction: column;
+}
+.sector-right{
+    .right{
+
+width: 300px;
+    }
+    .rec{
+        width: 300px;
+    }
+    .more{
+        width: 300px;
+    }
+}
 }

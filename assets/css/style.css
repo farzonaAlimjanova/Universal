@@ -619,6 +619,10 @@ i {
 }
 .sectors > div {
   margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
 }
 
 .box1 {
@@ -834,6 +838,120 @@ i {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ac8ee3;
+}
+
+.rec {
+  background-color: white;
+  border-bottom: 1px solid #939699;
+  width: 300px;
+  padding: 10px;
+}
+.rec h2 {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #262d33;
+  text-align: center;
+}
+
+.right {
+  background-color: white;
+  border-bottom: 1px solid #939699;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 20px;
+}
+.right img {
+  width: 100%;
+  height: auto;
+}
+.right p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #4b5157;
+}
+.right span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #939699;
+}
+
+.num {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 0.71429;
+  text-align: right;
+  color: #262d33;
+  opacity: 0.08;
+}
+
+.more {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
+  color: #262d33;
+  background-color: white;
+  width: 300px;
+  padding: 10px;
+}
+
+@media (max-width: 1220px) {
+  .sector-left .sec {
+    flex-direction: column;
+    height: 100%;
+    width: 500px;
+  }
+  .sector-left .sec .box1-writing, .sector-left .sec .box2-writing, .sector-left .sec .box3-writing, .sector-left .sec .box4-writing, .sector-left .sec .box5-writing, .sector-left .sec .box6-writing {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+  }
+}
+@media (max-width: 865px) {
+  .sector-left .sec {
+    width: 300px;
+  }
+  .sector-left .fav {
+    gap: 200px;
+  }
+  .sector-right .right {
+    flex-direction: column;
+    width: 200px;
+  }
+  .sector-right .rec {
+    width: 200px;
+  }
+  .sector-right .more {
+    width: 200px;
+  }
+}
+@media (max-width: 543px) {
+  .sectors > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .sector-right .right {
+    width: 300px;
+  }
+  .sector-right .rec {
+    width: 300px;
+  }
+  .sector-right .more {
+    width: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
